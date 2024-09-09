@@ -15,22 +15,7 @@
 </picture>
 <p>Решение 3</p>
 <p>Код скрипта banner.sh:</p>
-```
-#!/bin/bash
-echo -n "+-"
-for ((i=0; i<${#1}; i++))
-do
-        echo -n "-"
-done
-echo "-+"
-echo "| $1 |"
-echo -n "+-"
-for ((i=0; i<${#1}; i++))
-do
-        echo -n "-"
-done
-echo "-+"
-```
+<script src="1_3.sh"></script>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="1_3.png">
   <source media="(prefers-color-scheme: light)" srcset="1_3.png">
