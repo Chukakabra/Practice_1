@@ -15,7 +15,7 @@
 </picture>
 <p>Решение 3</p>
 <p>Код скрипта banner.sh:</p>
-<script>$.getScript("1_3.sh")</script>
+<script>$.getScript("1_3.sh");</script>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="1_3.png">
   <source media="(prefers-color-scheme: light)" srcset="1_3.png">
