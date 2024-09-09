@@ -15,6 +15,7 @@
 </picture>
 <p>Решение 3</p>
 <p>Код скрипта banner.sh:</p>
+
 ```bash
 #!/bin/bash
 echo -n "+-"
@@ -31,6 +32,7 @@ do
 done
 echo "-+"
 ```
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="1_3.png">
   <source media="(prefers-color-scheme: light)" srcset="1_3.png">
