@@ -30,7 +30,7 @@ do
         echo -n "-"
 done
 echo "-+"
-  ```
+```
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="1_3.png">
   <source media="(prefers-color-scheme: light)" srcset="1_3.png">
