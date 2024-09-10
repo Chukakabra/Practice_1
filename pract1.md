@@ -8,53 +8,81 @@
 
 Вывести отсортированный в алфавитном порядке список имен пользователей в файле passwd (вам понадобится grep).
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="1_1.png">
+  <source media="(prefers-color-scheme: light)" srcset="1_1.png">
+  <img alt="YOUR-ALT-TEXT" src="1_1.png">
+</picture>
+
 ## Задача 2
 
 Вывести данные /etc/protocols в отформатированном и отсортированном порядке для 5 наибольших портов, как показано в примере ниже:
 
-```
-[root@localhost etc]# cat /etc/protocols ...
-142 rohc
-141 wesp
-140 shim6
-139 hip
-138 manet
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="1_2.png">
+  <source media="(prefers-color-scheme: light)" srcset="1_2.png">
+  <img alt="YOUR-ALT-TEXT" src="1_2.png">
+</picture>
 
 ## Задача 3
 
 Написать программу banner средствами bash для вывода текстов, как в следующем примере (размер баннера должен меняться!):
 
-```
-[root@localhost ~]# ./banner "Hello from RTU MIREA!"
-+-----------------------+
-| Hello from RTU MIREA! |
-+-----------------------+
+<p>Код скрипта banner:</p>
+
+```bash
+#!/bin/bash
+echo -n "+-"
+for ((i=0; i<${#1}; i++))
+do
+        echo -n "-"
+done
+echo "-+"
+echo "| $1 |"
+echo -n "+-"
+for ((i=0; i<${#1}; i++))
+do
+        echo -n "-"
+done
+echo "-+"
 ```
 
-Перед отправкой решения проверьте его в ShellCheck на предупреждения.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="1_3.png">
+  <source media="(prefers-color-scheme: light)" srcset="1_3.png">
+  <img alt="YOUR-ALT-TEXT" src="1_3.png">
+</picture>
 
 ## Задача 4
 
 Написать программу для вывода всех идентификаторов (по правилам C/C++ или Java) в файле (без повторений).
 
-Пример для hello.c:
+<p>Код скрипта ident.sh:</p>
 
+```bash
+#!/bin/sh
+grep -o "[a-zA-Z]*" hello.c | sort -u
 ```
-h hello include int main n printf return stdio void world
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="1_4.png">
+  <source media="(prefers-color-scheme: light)" srcset="1_4.png">
+  <img alt="YOUR-ALT-TEXT" src="1_4.png">
+</picture>
 
 ## Задача 5
 
-Написать программу для регистрации пользовательской команды (правильные права доступа и копирование в /usr/local/bin).
+<p>Код скрипта reg.sh:</p>
 
-Например, пусть программа называется reg:
-
+```bash
+#!/bin/sh
+chmod u+rwx $1
+cp $1 /usr/local/bin
 ```
-./reg banner
-```
-
-В результате для banner задаются правильные права доступа и сам banner копируется в /usr/local/bin.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="1_5.png">
+  <source media="(prefers-color-scheme: light)" srcset="1_5.png">
+  <img alt="YOUR-ALT-TEXT" src="1_5.png">
+</picture>
 
 ## Задача 6
 
@@ -66,7 +94,17 @@ h hello include int main n printf return stdio void world
 
 ## Задача 8
 
-Написать программу, которая находит все файлы в данном каталоге с расширением, указанным в качестве аргумента и архивирует все эти файлы в архив tar.
+<p>Код скрипта archive.sh:</p>
+
+```bash
+#!/bin/sh
+find -name "*.$1" | tar -cf archive.tar -T -
+```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="1_8.png">
+  <source media="(prefers-color-scheme: light)" srcset="1_8.png">
+  <img alt="YOUR-ALT-TEXT" src="1_8.png">
+</picture>
 
 ## Задача 9
 
