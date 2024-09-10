@@ -65,3 +65,21 @@ cp $1 /usr/local/bin
   <source media="(prefers-color-scheme: light)" srcset="1_5.png">
   <img alt="YOUR-ALT-TEXT" src="1_5.png">
 </picture>
+
+<p>Решение 6</p>
+<p>Код скрипта comment:</p>
+
+```bash
+#!/bin/sh
+line = $(head -1 $1)
+if [[$line == "//"*]] || [[$line == "#"*]]; then
+echo "First line have comment"
+else
+echo "First line doesn't have comment"
+fi 
+```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="1_6.png">
+  <source media="(prefers-color-scheme: light)" srcset="1_6.png">
+  <img alt="YOUR-ALT-TEXT" src="1_6.png">
+</picture>
