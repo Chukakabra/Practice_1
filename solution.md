@@ -41,7 +41,7 @@ echo "-+"
 
 <p>Решение 4</p>
 <p>Код скрипта ident.sh:</p>
-```
+```bash
 #!/bin/sh
 grep -o "[a-zA-Z]*" hello.c | sort -u
 ```
