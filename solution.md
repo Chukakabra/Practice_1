@@ -52,3 +52,16 @@ grep -o "[a-zA-Z]*" hello.c | sort -u
   <img alt="YOUR-ALT-TEXT" src="1_4.png">
 </picture>
 
+<p>Решение 5</p>
+<p>Код скрипта reg.sh:</p>
+
+```bash
+#!/bin/sh
+chmod u+rwx $1
+cp $1 /usr/local/bin
+```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="1_5.png">
+  <source media="(prefers-color-scheme: light)" srcset="1_5.png">
+  <img alt="YOUR-ALT-TEXT" src="1_5.png">
+</picture>
