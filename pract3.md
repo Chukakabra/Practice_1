@@ -112,7 +112,11 @@ BNF =
 E = B | B E
 B = 0 | 1
 ```
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="3_3.png">
+  <source media="(prefers-color-scheme: light)" srcset="3_3.png">
+  <img alt="YOUR-ALT-TEXT" src="3_3.png">
+</picture>
 ## Задача 4
 
 BNF = 
@@ -121,7 +125,11 @@ E = P | C
 P = ( E ) | ()
 C = { E } | {}
 ```
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="3_4.png">
+  <source media="(prefers-color-scheme: light)" srcset="3_4.png">
+  <img alt="YOUR-ALT-TEXT" src="3_4.png">
+</picture>
 ## Задача 5
 
 BNF = 
@@ -131,7 +139,11 @@ T = F | T "&" F
 F = "~" F | "(" E ")" | VAR
 VAR = x | y | z
 ```
-
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="3_5.png">
+  <source media="(prefers-color-scheme: light)" srcset="3_5.png">
+  <img alt="YOUR-ALT-TEXT" src="3_5.png">
+</picture>
 ## Полезные ссылки
 
 Configuration complexity clock: https://mikehadlow.blogspot.com/2012/05/configuration-complexity-clock.html
