@@ -70,7 +70,9 @@ let subject = "Конфигурационное управление"
 in  { groups = groups, students = students, subject = subject }
 ```
 
-Программа для заданий 3-5:
+Программа для задач 3-5:
+
+```
 import random
 
 
@@ -101,18 +103,20 @@ E = a
 
 for i in range(10):
     print(generate_phrase(parse_bnf(BNF), 'E'))
-
+```
 
 ## Задача 3
 
-BNF = '''
+BNF = 
+'''
 E = B | B E
 B = 0 | 1
 '''
 
 ## Задача 4
 
-BNF = '''
+BNF = 
+'''
 E = P | C
 P = ( E ) | ()
 C = { E } | {}
@@ -120,7 +124,8 @@ C = { E } | {}
 
 ## Задача 5
 
-BNF = '''
+BNF = 
+'''
 E = T | E "|" T
 T = F | T "&" F
 F = "~" F | "(" E ")" | VAR
