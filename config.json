@@ -1,0 +1,6 @@
+{
+    "graphviz_path": "D:/Programs/Graphviz-12.2.1-win64/bin/dot.exe",
+    "repo_path": "D:/wtf_is_this/graph/Blitznote",
+    "output_image_path": "D:/wtf_is_this/graph/graphdependencies_graph.png",
+    "branch_name": "main"
+}
