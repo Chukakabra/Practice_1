@@ -1,0 +1,6 @@
+|| Пример конфигурации 3
+var settings table(
+    debug => true,
+    version => 1.0,
+    languages => [python, javascript]
+)

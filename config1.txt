@@ -1,0 +1,4 @@
+|| Пример конфигурации 1
+var name "John Doe"
+var age 30
+var hobbies [reading, coding, hiking]

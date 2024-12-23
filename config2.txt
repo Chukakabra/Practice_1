@@ -1,0 +1,5 @@
+|| Пример конфигурации 2
+var server table(
+    host => "localhost",
+    port => 8080
+)
